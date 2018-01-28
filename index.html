@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>HMmotos</title>
+
+
+</head>
+<body>
+    <script src="./src/js/jquery-3.2.1.min.js"></script>
+
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="">
+                </a>
+            </div>
+            <div id="menu">
+                <div class="btn-group">
+                    <button class="button">
+                        <a id="suzi" href="#"><b>Suzuki</b></a>
+                    </button>
+                    <button class="button">
+                        <b>Kawasaki</b>
+                    </button>
+                    <button class="button">
+                        <b>Peugeot</b>
+                    </button>
+                    <button class="button">
+                        <b>Benelli</b>
+                    </button>
+                    <button class="button">
+                        <b>Keeway</b>
+                    </button>
+                </div>
+
+                <form>
+                    <input type="text" name="pesquisar" placeholder="Pesquisar...">
+                </form>
+            </div>
+
+        </div>
+
+        <div id="contenthome">
+
+            
+
+        </div>
+
+
+
+
+        <div id="footer">
+            <div id="footer-middle-bar">
+
+            </div>
+            <div id="footer-holder">
+
+                <div class="column">
+                    <h3>©COPYRIGHT HMmotos. Direitos Reservados.</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+    
+<script>
+        $(document).ready(function(){
+            $("#contenthome").load("home.html");
+            $('#suzi').click(function (event) {
+            event.preventDefault();
+             $("#contenthome").load("suzuki.html");
+             });
+        });
+</script>
+
+
+</html>
