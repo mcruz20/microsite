@@ -1,50 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>HMmotos</title>
-
-
-</head>
-<body>
-    <script src="./src/js/jquery-3.2.1.min.js"></script>
-
-    <div id="container">
-        <div id="header">
-            <div id="logo">
-                <a href="index.html">
-                    <img src="logo.png" alt="">
-                </a>
-            </div>
-            <div id="menu">
-                <div class="btn-group">
-                    <button class="button">
-                        <a id="suzi" href="#"><b>Suzuki</b></a>
-                    </button>
-                    <button class="button">
-                        <b>Kawasaki</b>
-                    </button>
-                    <button class="button">
-                        <b>Peugeot</b>
-                    </button>
-                    <button class="button">
-                        <b>Benelli</b>
-                    </button>
-                    <button class="button">
-                        <b>Keeway</b>
-                    </button>
-                </div>
-
-                <form>
-                    <input type="text" name="pesquisar" placeholder="Pesquisar...">
-                </form>
-            </div>
-
-        </div>
+<script src="./src/js/jquery-3.2.1.min.js"></script>
         <div id="contenthome">
 
         <div id="column-left">
@@ -53,8 +7,8 @@
                 <div class="box-content">
                     <div class="box-category">
                             <div class="btn-grupo">
-                                    <a href="supersport.html"><button class="botao" >SUPER SPORT</button></a>
-                                    <button class="botao">STREET</button>
+                                    <a id="super" href="#"><button class="botao" >SUPER SPORT</button></a>
+                                    <a id="street" href="#"><button class="botao" >STREET</button></a>
 
                             </div>
                     </div>
@@ -69,5 +23,16 @@
 
         </div>
 
-     </div>
-
+    <script>
+            $(document).ready(function(){
+                $("#content").load("supersport.html");
+                $('#super').click(function (event) {
+                event.preventDefault();
+                 $("#content").load("supersport.html");
+                 });
+                $('#street').click(function (event) {
+                event.preventDefault();
+                 $("#content").load("street.html");
+                 });
+            });
+    </script>

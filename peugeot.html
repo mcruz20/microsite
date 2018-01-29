@@ -1,0 +1,34 @@
+<script src="./src/js/jquery-3.2.1.min.js"></script>
+<div id="contenthome">
+
+<div id="column-left">
+    <div class="box-left">
+        <div class="box-heading"><b>Modelos</b></div>
+        <div class="box-content">
+            <div class="box-category">
+                    <div class="btn-grupo">
+                            <a id="sco" href="#"><button class="botao" >SCOOTER</button></a>
+
+
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content">
+
+</div>
+
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#content").load("scooter.html");
+        $('#sco').click(function (event) {
+        event.preventDefault();
+         $("#content").load("scooter.html");
+         });
+    });
+</script>
