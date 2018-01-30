@@ -26,7 +26,7 @@
                         <a id="suzi" href="#"><b>Suzuki</b></a>
                     </button>
                     <button class="button">
-                        <b>Kawasaki</b>
+                        <a id="kawa" href="#"><b>Kawasaki</b></a>
                     </button>
                     <button class="button">
                         <a id="peug" href="#"><b>Peugeot</b></a>
@@ -84,6 +84,10 @@
              $('#peug').click(function (event) {
             event.preventDefault();
              $("#contenthome").load("peugeot.html");
+            });
+            $('#kawa').click(function (event) {
+            event.preventDefault();
+             $("#contenthome").load("kawasaki.html");
             });
         });
 </script>
