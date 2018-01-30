@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>HMmotos</title>
-
+    <script src="./src/js/jquery-3.2.1.min.js"></script>
 
 </head>
 <body>
-    <script src="./src/js/jquery-3.2.1.min.js"></script>
+    
 
     <div id="container">
         <div id="header">
@@ -23,13 +23,13 @@
             <div id="menu">
                 <div class="btn-group">
                     <button class="button">
-                        <a href="suzuki.html"><b>Suzuki</b></a>
+                        <a id="suzi" href="#"><b>Suzuki</b></a>
                     </button>
                     <button class="button">
                         <b>Kawasaki</b>
                     </button>
                     <button class="button">
-                        <b>Peugeot</b>
+                        <a id="peug" href="#"><b>Peugeot</b></a>
                     </button>
                     <button class="button">
                         <b>Benelli</b>
@@ -48,11 +48,7 @@
 
         <div id="contenthome">
 
-            <div class="welcome">Bem-vindo a HMmotos</div>
 
-            <p>
-                <img class="img" src="wallpaper.png" alt="">
-            </p>
 
         </div>
 
@@ -85,6 +81,10 @@
             event.preventDefault();
              $("#contenthome").load("suzuki.html");
              });
+             $('#peug').click(function (event) {
+            event.preventDefault();
+             $("#contenthome").load("peugeot.html");
+            });
         });
 </script>
 
