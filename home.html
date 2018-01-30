@@ -1,10 +1,49 @@
 
-            <p class="p">
-                <div class="container">
-                    <img src="wallpaper.png" alt="moto" style="width:100%;">
-                    <div class="content">
-                      <h1>Bem-vindo a HMmotos</h1>
-                      <p class="h1">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
-                    </div>
-                  </div>
-            </p>
+<p class="p">
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img class="img" src="wallpaper.png" alt="moto" style="width:100%;">
+      <div class="text"><h1>BEM VINDO, A HMmotos</h1></div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="img" src="wallpaper2.png" style="width:100%">
+      <div class="text"><h1>A MELHOR EMPRESA DE MOTOS</h1></div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="img" src="wallpaper3.png" style="width:100%">
+      <div class="text"><h1>PRÉMIO DE HONRA 2017</h1></div>
+    </div>
+    <br>
+    <br>
+
+  </div>
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</p>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 5000);
+  }
+</script>
