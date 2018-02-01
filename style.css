@@ -81,10 +81,10 @@
 }
 
 #menu{
-    height: 46px;
+    height: 44.5px;
     line-height: 28px;
     position: relative;
-    z-index: 1000;
+    z-index: 2;
     border-top: 2px solid #DCDCDC;
     clear: both;
     font-family: 'Bebas Neue';
@@ -209,15 +209,19 @@ li {
     background-color: white; 
     color: black;
     border: none;
+    padding-top: 1px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14.5px;
     cursor: pointer;
     float: left;
     font-family: 'Bebas Neue';
+    z-index: 1;
 }
+
+
 
 .btn-group .button:not(:last-child) {
     border-right: none; /* Prevent double borders */
@@ -292,6 +296,19 @@ h1, .welcome {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'AlternateGothicNo3DRegular';
+    src: url(AlternateGothicNo3DRegular.eot);
+    src: url(AlternateGothicNo3DRegular.eot?#iefix) format('embedded-opentype'),
+         url(AlternateGothicNo3DRegular.woff) format('woff'),
+         url(AlternateGothicNo3DRegular.ttf) format('truetype'),
+         url(AlternateGothicNo3DRegular.otf) format('otf');
+         
+
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     font-family: 'Bebas Neue';
     
@@ -311,6 +328,10 @@ p {
 h1{
     padding-left: 10px;
     color: white;
+}
+
+.motas{
+    color: black;
 }
 
 .h1{
@@ -360,4 +381,210 @@ h1{
 a{
     color: black;
     text-decoration: none;
+}
+
+.latest {
+    padding: 0 0 75px;
+    margin-top: 60px;
+
+}
+
+.row {
+    max-width: 1230px;
+}
+
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+}
+
+.latest .lead-tag {
+    color: #545454;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    line-height: 1;
+    position: relative;
+    margin: 0 0 0 1%;
+}
+
+.left {
+    float: left !important;
+}
+
+.latest .late-line {
+    width: 80%;
+    height: 35px;
+    border-bottom: 3px solid #DCDCDC;
+}
+
+.right {
+    float: right !important;
+}
+
+.row .row {
+    margin: 0;
+}
+
+.row .row {
+    width: auto;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+}
+
+.latest li:first-child {
+    border-left: none !important;
+}
+
+.latest .options {
+    width: 100%;
+    margin-bottom: 16px;
+    margin-left: 0;
+    padding-top: 14px;
+}
+
+.inline-list {
+    margin: 0 auto 1.0625rem auto;
+    margin-left: -1.375rem;
+    margin-right: 0;
+    padding-left: 430px;
+    list-style: none;
+    overflow: hidden;
+}
+
+
+.latest .options li {
+    border-left: 1px solid #8e8e8e;
+    margin: 0;
+}
+
+.inline-list > li {
+    list-style: none;
+    float: left;
+    margin-left: 1.375rem;
+    display: block;
+}
+
+.latest .options li a.first {
+    margin-left: 10px;
+}
+
+.latest li .late-list.active {
+    color: #66cc33;
+    background-color: white; 
+}
+
+.latest .options li a {
+    margin: 0 34px;
+}
+
+.latest li .late-list {
+    color: #8e8e8e;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 25.5px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.inline-list > li > * {
+    display: block;
+}
+
+.three{
+    border: none;
+}
+
+.latest .latest-products {
+    padding: 40px 0;
+    display: none;
+    
+}
+
+.latest .new-fun {
+    text-align: center;
+    
+}
+
+[class*="block-grid-"] {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+}
+
+ul, ol, dl {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    list-style-position: outside;
+    font-family: inherit;
+}
+
+.latest .new-fun li {
+    width: 31%;
+ 
+}
+
+.latest li:first-child {
+    border: none;
+    
+}
+
+.small-block-grid-3 > li:nth-of-type(3n+1) {
+    clear: both;
+    border-top: none !important;
+}
+
+.small-block-grid-3 > li {
+    width: 33.33333%;
+    padding: 0 0.625rem 1.25rem;
+    border-top: none !important;
+}
+
+[class*="block-grid-"] > li {
+    display: inline;
+    height: auto;
+    float: left;
+    padding: 0 0.625rem 1.25rem;
+    border-top: none !important;
+}
+
+a {
+    outline: none;
+}
+
+.new-fun .vert-line {
+    height: 290px;
+    width: 1px;
+    border-right: 1px solid #ccc;
+    border-top: none !important;
+}
+
+.left {
+    float: left !important;
+    border-top: none !important;
+}
+
+.imga{
+    width: 300px;
+    height: 200px;
+}
+
+
+.line {
+    width: 100%;
+    height: 25px;
+    border-top: 1px solid #ccc;
+}
+
+.center{
+    float: right !important;
 }
