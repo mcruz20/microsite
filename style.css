@@ -383,7 +383,7 @@ a{
     text-decoration: none;
 }
 
-.latest {
+.ultimas {
     padding: 0 0 75px;
     margin-top: 60px;
 
@@ -402,7 +402,7 @@ a{
     max-width: none;
 }
 
-.latest .lead-tag {
+.ultimas .ult {
     color: #545454;
     font-size: 65px;
     text-transform: uppercase;
@@ -416,7 +416,7 @@ a{
     float: left !important;
 }
 
-.latest .late-line {
+.ultimas .linha {
     width: 80%;
     height: 35px;
     border-bottom: 3px solid #DCDCDC;
@@ -439,11 +439,11 @@ a{
     max-width: none;
 }
 
-.latest li:first-child {
+.ultimas li:first-child {
     border-left: none !important;
 }
 
-.latest .options {
+.ultimas .opcoes {
     width: 100%;
     margin-bottom: 16px;
     margin-left: 0;
@@ -454,13 +454,13 @@ a{
     margin: 0 auto 1.0625rem auto;
     margin-left: -1.375rem;
     margin-right: 0;
-    padding-left: 430px;
+    padding-left: 433px;
     list-style: none;
     overflow: hidden;
 }
 
 
-.latest .options li {
+.ultimas .opcoes li {
     border-left: 1px solid #8e8e8e;
     margin: 0;
 }
@@ -472,20 +472,20 @@ a{
     display: block;
 }
 
-.latest .options li a.first {
+.ultimas .opcoes li a.first {
     margin-left: 10px;
 }
 
-.latest li .late-list.active {
+.ultimas li .late-list.active {
     color: #66cc33;
     background-color: white; 
 }
 
-.latest .options li a {
+.ultimas .opcoes li a {
     margin: 0 34px;
 }
 
-.latest li .late-list {
+.ultimas li .late-list {
     color: #8e8e8e;
     text-align: center;
     text-transform: uppercase;
@@ -503,13 +503,13 @@ a{
     border: none;
 }
 
-.latest .latest-products {
+.ultimas .ultimas-produtos {
     padding: 40px 0;
     display: none;
     
 }
 
-.latest .new-fun {
+.ultimas .tabela {
     text-align: center;
     
 }
@@ -528,12 +528,12 @@ ul, ol, dl {
     font-family: inherit;
 }
 
-.latest .new-fun li {
+.ultimas .tabela li {
     width: 31%;
  
 }
 
-.latest li:first-child {
+.ultimas li:first-child {
     border: none;
     
 }
@@ -561,7 +561,7 @@ a {
     outline: none;
 }
 
-.new-fun .vert-line {
+.tabela .vert-line {
     height: 290px;
     width: 1px;
     border-right: 1px solid #ccc;
@@ -579,7 +579,7 @@ a {
 }
 
 
-.line {
+.linha2 {
     width: 100%;
     height: 25px;
     border-top: 1px solid #ccc;
