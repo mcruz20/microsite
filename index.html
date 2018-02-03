@@ -32,10 +32,10 @@
                         <a id="peug" href="#"><b>Peugeot</b></a>
                     </button>
                     <button class="button">
-                        <b>Benelli</b>
+                        <a id="bene" href="#"><b>Benelli</b></a>
                     </button>
                     <button class="button">
-                        <b>Keeway</b>
+                        <a id="keew" href="#"><b>Keeway</b></a>
                     </button>
                 </div>
 
@@ -86,6 +86,14 @@
             $('#kawa').click(function (event) {
             event.preventDefault();
              $("#contenthome").load("kawasaki.html");
+            });
+            $('#bene').click(function (event) {
+            event.preventDefault();
+             $("#contenthome").load("benelli.html");
+            });
+            $('#keew').click(function (event) {
+            event.preventDefault();
+             $("#contenthome").load("keeway.html");
             });
         });
 </script>

@@ -1,0 +1,38 @@
+
+        <div id="contenthome">
+
+            <div id="column-left">
+                <div class="box-left">
+                    <div class="box-heading">
+                        <b>Modelos</b>
+                    </div>
+                    <div class="box-content">
+                        <div class="box-category">
+                            <div class="btn-grupo">
+                                <a href="125.html">
+                                    <a id="125" href="#"><button class="botao" >MOTO 125</button></a>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content">
+
+            </div>
+
+
+        </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#content").load("125.html");
+            $('#125').click(function (event) {
+            event.preventDefault();
+             $("#content").load("125.html");
+             });
+        });
+</script>
